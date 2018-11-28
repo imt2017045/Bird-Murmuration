@@ -8,17 +8,17 @@ import sample.*;
 
 public class TestFlock {
 	public static void main(String[] args) {
-		Flock f = new FlockY(); // where FlockX is a concrete derived class of Flock
+		Flock f = new Flock045(); // where FlockX is a concrete derived class of Flock
 		String[] colors = {"Blue", "Red", "Green", "Yellow", "Magenta", "Black"};
 		// add a bunch of birds
 
 		// repeat the above for the different derived classes of bird
-		Bird b1 = new my2Bird("Blue"); // where BirdX is a derived concrete class of Bird
+		Bird b1 = new Bird045("Blue"); // where BirdX is a derived concrete class of Bird
 		b1.setPos(10,10);
 		f.addBird(b1);
 
 		for(int i=0;i<5;i++){
-			Bird b = new my2Bird(colors[i+1]);
+			Bird b = new Bird045(colors[i+1]);
 			b.setPos(i*100,  10);
 			f.addBird(b);
 		}

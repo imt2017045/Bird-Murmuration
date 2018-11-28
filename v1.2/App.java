@@ -79,6 +79,7 @@ class App {
 		if (newFlock != null) {
 			newFlock.joinFlock(currentFlock);
 		}
+		currentFlock = newFlock;
 	}
 
 	void setTarget(int x, int y) {
